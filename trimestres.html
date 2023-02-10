@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Trimestres</title>
+    <!-- Theme color -->
+    <meta name="theme-color" content="#166534">
+    <!-- Theme color on ios -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#166534">
+    <!-- Theme color on ms phones -->
+    <meta name="msapplication-navbutton-color" content="#166534">
+    <!-- Icon -->
+    <link rel="icon" href="/calificaciones-trimestrales/assets/logo-bc112b4e.png">
+  <script type="module" crossorigin src="/calificaciones-trimestrales/assets/trimestres-185626ee.js"></script>
+  <link rel="modulepreload" crossorigin href="/calificaciones-trimestrales/assets/auth-46612ca9.js">
+  <link rel="modulepreload" crossorigin href="/calificaciones-trimestrales/assets/trimestres-9d81006d.js">
+  <link rel="stylesheet" href="/calificaciones-trimestrales/assets/auth-cbbbeb50.css">
+</head>
+
+<body>
+
+
+    <nav id="menu">
+        <ul class="responsive">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="calificaciones.html">Calificaciones</a>
+            </li>
+
+            <li id="mostrar_trimestres">
+                <a href="trimestres.html">Trimestres</a>
+            </li>
+        </ul>
+
+        <ul class="perfil">
+            <!-- Show the avatar of current user -->
+            <li>
+                <img id="imagen_usuario" referrerpolicy="no-referrer" alt="Avatar" id="avatar"
+                    class="w-8 h-8 rounded-full">
+            <li class="texto_nombre_usuario">
+                <a href="#" id="nombre"></a>
+            </li>
+
+            <li>
+                <a href="#" id="cerrar"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <!-- Insertar el logo de la universidad -->
+        <img src="/calificaciones-trimestrales/assets/logo-bc112b4e.png" alt="Logo de la universidad">
+        <p>Administración de mis calificaciones</p>
+    </header>
+
+    <main id="main">
+        <section class="section-izquierda">
+            <p>Datos del trimestre</p>
+            <form action="" id="formulario">
+                <label for="nombre">
+                    Trimestre
+                    <input name="nombre" type="text" required>
+                </label>
+
+                <label for="fecha_inicio">
+                    Fecha de inicio
+                    <input name="fecha_inicio" type="date" required>
+                </label>
+
+                <label for="fecha_fin">
+                    Fecha de fin
+                    <input name="fecha_fin" type="date" required>
+                </label>
+
+                <div class="footer">
+                    <button id="guardar" type="button">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="section-derecha">
+            <p>Trimestres registrados</p>
+            <table id="lista">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nombre</th>
+                        <th>Fechas</th>
+                        <th>Tareas</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+
+    <!-- Incluir el modelo trimestres para manipular la coleccion -->
+    
+
+</body>
+
+</html>
