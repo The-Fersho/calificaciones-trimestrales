@@ -1,7 +1,124 @@
+/*Import datatables css from package*/
+@import "../../node_modules/datatables.net-dt/css/jquery.dataTables.css";
+@import "../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css";
+@import "../../node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css";
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.border-hover {
-    @apply border-b-4 border-transparent hover:border-yellow-400
+body{
+    @apply text-white bg-gray-200;
+}
+header {
+    @apply bg-opacity-90
+    py-6
+    text-center
+     uppercase 
+     text-[1em]
+     bg-gradient-to-b
+     from-blue-200
+     to-white;
+}
+header p {
+    @apply font-bold text-transparent bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text;
+}
+
+header img {
+    @apply block w-auto h-10 mx-auto;
+}
+
+section{
+    @apply p-2 border border-gray-100 rounded-lg shadow-lg bg-gray-50 shadow-stone-500;
+}
+section > p{
+    @apply p-1 rounded-lg bg-gray-100 text-[1em] border-b-2 border-teal-600 mb-2 font-bold shadow-lg;
+}
+main{
+    @apply flex flex-col gap-2 p-2 mt-4 text-gray-700 md:flex-row;
+}
+nav{
+    @apply flex flex-col-reverse justify-between hidden p-4 text-white border-t-8 border-yellow-400 shadow-lg sm:flex-row bg-gradient-to-b from-green-400 to-green-800 shadow-gray-400;
+}
+nav ul {
+    @apply flex gap-4;
+}
+
+nav li{
+    @apply border-b-4 border-transparent; 
+}
+nav li:hover{
+    @apply hover:border-yellow-400; 
+}
+
+ul.perfil{
+    @apply flex justify-between mt-2 border-b sm:mt-0 sm:border-none ; 
+}
+
+ul.responsive{
+    @apply flex pt-2 text-center sm:flex-row sm:items-center lg:justify-between sm:pt-0;
+}
+
+ul.responsive li{
+    @apply w-full font-bold rounded-lg sm:rounded-none ;
+}
+
+input, select {
+    @apply w-full p-2 rounded-lg ring-2 ring-gray-200 focus:ring-gray-400 focus:border-none focus:outline-none;
+}
+
+button[type="button"], button {
+    @apply px-4 py-2 
+    text-white 
+    bg-green-600 rounded-lg 
+    hover:bg-green-500 
+    active:bg-green-800
+    active:ring-4
+    active:top-[1px] active:relative; 
+}
+
+.footer {
+    @apply relative bottom-0 flex justify-end p-2 mt-4 border-t border-green-700 border-dashed rounded-b-lg bg-emerald-100;
+}
+
+table{
+    @apply w-full;
+}
+td{
+    @apply py-1 border-b border-gray-200;
+}
+/*Div que contiene los botones de editar y eliminar*/
+.tareas{
+    @apply flex items-start justify-center gap-2;
+}
+
+/*Estilos para los botones de editar y eliminar*/
+.editar {
+    @apply p-1 bg-orange-400 hover:bg-orange-500 active:bg-orange-600 active:ring-orange-500 active:ring-4;
+}
+.eliminar {
+    @apply p-1 bg-pink-400 hover:bg-pink-500 active:bg-pink-600 active:ring-pink-500 active:ring-4;
+}
+
+
+#btn-google{
+    @apply flex items-center justify-center p-4 mx-auto text-lg bg-opacity-25 bg-sky-500 ;
+}
+#btn-google img{
+    @apply w-auto h-12;
+}
+
+.section-izquierda{
+    @apply w-full md:w-4/12;
+}
+
+.section-derecha{
+    @apply w-full md:w-8/12;
+}
+.texto_nombre_usuario{
+    @apply hidden md:block;
+}
+#cerrar{
+    @apply p-1 font-bold text-teal-800 bg-white rounded-lg shadow-lg;
 }

@@ -7,5 +7,10 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets"
   },
+
+  server: {
+    host: '192.168.1.19'
+  },
+
   plugins: []
 });
