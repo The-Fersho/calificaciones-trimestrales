@@ -2,7 +2,7 @@
 //Definir la cuenta del administrador
 export const getAdmin = () => {
     //Id de la cuenta de administrador (Creador de la aplicación)
-    return [ 'Vg7vghXAqTSfED6poryoqDtKZM63' ];
+    return [ 'Vg7vghXAqTSfED6poryoqDtKZM63', 'NooUwZC9GXTcwinRDdroJSiAPUp1' ];
 }
 
 //Get the user data from the window storage
